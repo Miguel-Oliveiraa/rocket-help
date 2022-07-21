@@ -1,11 +1,12 @@
-import { View, Text } from "react-native";
-import { NativeBaseProvider } from "native-base";
+import { VStack, Heading } from "native-base";
 
 function SignIn() {
   return (
-    <NativeBaseProvider>
-      <Text>Ola, Miguel!</Text>
-    </NativeBaseProvider>
+    <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={24}>
+      <Heading color="gray.100" fontSize="xl" marginTop={20} marginBottom={6}>
+        Acessar sua conta
+      </Heading>
+    </VStack>
   );
 }
 

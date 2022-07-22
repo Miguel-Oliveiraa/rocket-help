@@ -5,7 +5,7 @@ import Logo from "../assets/logo_primary.svg";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
-function SignIn() {
+export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

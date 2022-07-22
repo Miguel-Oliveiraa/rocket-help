@@ -1,4 +1,5 @@
 import SignIn from "./src/screens/SingIn";
+import { Routes } from "./src/routes";
 import {
   useFonts,
   Roboto_400Regular,
@@ -21,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }

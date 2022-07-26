@@ -29,22 +29,22 @@ $ git clone git@github.com:Miguel-Oliveiraa/rockethelp.git
 ## ☕ Using <rocket-help>
 
 To use <rocket-help>, you must:
-```
 Enter the directory
+```
 $ cd rocket-help
 ```
-```
 install dependencies
+```
 $ npm install
 or
 $ yarn
 ```
-```
 Run the expo app
+```
 $ expo start
 ```
 
-## 📫 Contributing to <kotlin-todo-list-app>
+## 📫 Contributing to <krocket-help>
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 To contribute to <krocket-help>, follow theses steps:
 

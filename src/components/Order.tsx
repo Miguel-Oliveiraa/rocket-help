@@ -1,34 +1,21 @@
-import {
-  HStack,
-  VStack,
-  Text,
-  Box,
-  Circle,
-  useTheme,
-  Pressable,
-  IPressableProps,
-} from "native-base";
-import {
-  ClockAfternoon,
-  Hourglass,
-  CircleWavyCheck,
-} from "phosphor-react-native";
+import { Box, Circle, HStack, Text, useTheme, VStack, Pressable, IPressableProps } from 'native-base';
+import { ClockAfternoon, Hourglass, CircleWavyCheck } from 'phosphor-react-native';
 
 export type OrderProps = {
   id: string;
   patrimony: string;
   when: string;
-  status: "open" | "closed";
-};
+  status: 'open' | 'closed';
+}
 
 type Props = IPressableProps & {
   data: OrderProps;
-};
+}
 
 export function Order({ data, ...rest }: Props) {
   const { colors } = useTheme();
-  const statusColor =
-    data.status === "open" ? colors.secondary[700] : colors.green[300];
+
+  const statusColor = data.status === 'open' ? colors.secondary[700] : colors.green[300];
 
   return (
     <Pressable {...rest}>
@@ -41,8 +28,11 @@ export function Order({ data, ...rest }: Props) {
         overflow="hidden"
       >
         <Box h="full" w={2} bg={statusColor} />
+
         <VStack flex={1} my={5} ml={5}>
-          <Text color="white">Patrimônio {data.patrimony}</Text>
+          <Text color="white" fontSize="md">
+            Patrimônio {data.patrimony}
+          </Text>
           <HStack alignItems="center">
             <ClockAfternoon size={15} color={colors.gray[300]} />
             <Text color="gray.200" fontSize="xs" ml={1}>
@@ -50,12 +40,13 @@ export function Order({ data, ...rest }: Props) {
             </Text>
           </HStack>
         </VStack>
-        <Circle bg="gray.500" h={12} w={12} mr={5} borderRadius={25}>
-          {data.status === "closed" ? (
-            <CircleWavyCheck size={24} color={statusColor} />
-          ) : (
-            <Hourglass size={24} color={statusColor} />
-          )}
+
+        <Circle bg="gray.500" h={12} w={12} mr={5}>
+          {
+            data.status === 'closed'
+              ? <CircleWavyCheck size={24} color={statusColor} />
+              : <Hourglass size={24} color={statusColor} />
+          }
         </Circle>
       </HStack>
     </Pressable>

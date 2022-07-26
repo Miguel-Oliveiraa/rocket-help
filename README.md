@@ -2,8 +2,8 @@
 Aplicativo para receituarios medicos, desenvolvido em React JS. :iphone:
 
 <h1 align='left'>
-  <img src='./modelo1.jpeg' height=425></img>
-  <img src='./modelo2.jpeg' height=425></img>
+  <img src='./Capa.png'></img>
+
 </h1>
 
 ### Executar o Projeto

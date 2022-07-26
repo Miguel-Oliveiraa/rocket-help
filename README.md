@@ -1,5 +1,5 @@
 # Rocket Help
-Aplicativo para receituarios medicos, desenvolvido em React JS. :iphone:
+Rocket help is an app developed to help the TI team of a company, organizing the help request, to fix the problems in the workspace. 🔧:iphone:
 
 <h1 align='left'>
   <img src='./Capa.png'></img>
